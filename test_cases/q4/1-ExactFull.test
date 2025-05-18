@@ -1,0 +1,36 @@
+class: "DoubleInferenceAgentTest"
+
+seed: "188"
+
+layout: """
+%%%%%%%%%%%%%%%
+%      G      %
+% %%%%%%%%%%% %
+% %         % %
+% %         % %
+% %         % %
+% %         % %
+% %    P    % %
+% %         % %
+% %         % %
+% %         % %
+% %         % %
+% %%%%%%%%%%% %
+%      G      %
+%%%%%%%%%%%%%%%
+% % %%%%%%%%%%%
+%%%%%%%%%%%%%%%
+"""
+
+observe: "True"
+
+elapse: "True"
+
+check_uniform: "False"
+max_moves: "200"
+
+num_ghosts: "2"
+ghost: "SeededRandomGhostAgent"
+error_msg: "Exact inference full test: %d inference errors."
+inference: "ExactInference"
+L2_tolerance: "0.0001"

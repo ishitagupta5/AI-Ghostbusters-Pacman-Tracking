@@ -1,0 +1,25 @@
+class: "DoubleInferenceAgentTest"
+
+seed: "188"
+layout: """
+%%%%%%%%%%%
+%   %G%   %
+%%%%%%%%%%%
+%%%%%P%%%%%
+% %%%%%%%%%
+%%%%%%%%%%%
+"""
+
+observe: "True"
+
+elapse: "False"
+
+check_uniform: "False"
+max_moves: "50"
+num_ghosts: "1"
+
+ghost: "SeededRandomGhostAgent"
+inference: "ExactInference"
+error_msg: "Exact inference stationary pacman observe test: %d inference errors."
+L2_tolerance: "0.0001"
+

@@ -1,0 +1,25 @@
+class: "GameScoreTest"
+
+num_runs: "10"
+num_wins_for_credit: "8"
+layout_name: "small_hunt"
+min_score: "700"
+
+layout_str: """
+%%%%%%%%%%%%%%%%%%%%
+%P      G       G  %
+% %%%%% %%%%%% % % %
+%     G            %
+%          G       %
+%%%%%%%%%%%%%%%%%%%%
+% % % % %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+"""
+
+observe: "True"
+elapse: "True"
+inference: "ExactInference"
+max_moves: "100"
+num_ghosts: "4"
+
+

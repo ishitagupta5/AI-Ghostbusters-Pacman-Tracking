@@ -1,0 +1,31 @@
+class: "DoubleInferenceAgentTest"
+
+seed: "188"
+
+layout: """
+%%%%%%%%%%%
+%%%%%%%%  %
+%%G%%%%%  %
+%%%%   %%%%
+%%%% P %%%%
+%%%%   %%%%
+%  %%%%%%%%
+%  %%%%%%G%
+%%%%%%%%%%%
+% % %%%%%%%
+%%%%%%%%%%%
+"""
+
+observe: "True"
+
+elapse: "False"
+
+check_uniform: "False"
+max_moves: "60"
+
+num_ghosts: "2"
+ghost: "DispersingSeededGhost"
+inference: "MarginalInference"
+L2_tolerance: "0.1"
+error_msg: "Joint particle filter observe_update test: %d inference errors."
+
